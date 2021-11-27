@@ -18,3 +18,16 @@ function darkMode() {
   image1.src = "img/undraw_conceptual_idea_dark.svg";
 }
 
+// Switch Theme Dynamically
+function switchTheme(event) {
+  if (event.target.checked) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    darkMode();
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    lightMode();
+  }
+}
+
+// Event Listener
+toggleSwitch.addEventListener("change", switchTheme);
