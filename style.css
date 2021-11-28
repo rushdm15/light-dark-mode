@@ -39,6 +39,17 @@ section {
   flex-direction: column;
 }
 
+.row {
+  display: flex;
+  /* text-align: center; */
+}
+
+.column {
+  flex: 50%;
+  text-align: center;
+  padding-left: 20%;
+}
+
 h1 {
   font-size: 100px;
   margin-bottom: 0;
