@@ -146,3 +146,88 @@ document.addEventListener("click", closeAllSelect);
 
 // =========================
 
+var chancesOfDivorce = 0;
+riskFactors =
+  ageGap +
+  race +
+  previousPartners +
+  virginityAge +
+  religiousNess +
+  educatEd +
+  fatherPresent +
+  raped +
+  mentallyIll +
+  interRacial;
+
+function ageGap(yourAge, theirAge) {
+  return yourAge - theirAge;
+}
+
+if (ageGap > 5) {
+  chancesOfDivorce + x;
+} else if (ageGap <= 5) {
+  chancesOfDivorce + 0;
+}
+
+if (race === whiteWoman && whiteWomanAge >= 20 && whiteWomanAge < 30) {
+  chancesOfDivorce - 0.15;
+}
+
+if (previousPartners >= 16) {
+  chancesOfDivorce + 0.6;
+}
+if (previousPartners > 5 && previousPartners <= 15) {
+  chancesOfDivorce + 0.5;
+}
+if (previousPartners > 2 && previousPartners <= 4) {
+  chancesOfDivorce + 0.4;
+}
+if ((previousPartners = 1)) {
+  chancesOfDivorce + 0.6;
+}
+
+if (virginityAge >= 23 && virginityAge <= 25) {
+  chancesOfDivorce + 0.05;
+}
+if ((virginityAge = 13 || 14)) {
+  chancesOfDivorce + 0.4;
+}
+if ((virginityAge = 15 || 16)) {
+  chancesOfDivorce + 0.3;
+}
+if ((virginityAge = 17 || 18)) {
+  chancesOfDivorce + 0.25;
+}
+if (virginityAge <= 12) {
+  chancesOfDivorce + 0.5;
+}
+
+if (religiousNess === veryImportant) {
+  chancesOfDivorce - 0.2;
+} else if (religiousNess === someWhat) {
+  chancesOfDivorce - 0.1;
+}
+
+if (educatEd === bachelorS) {
+  chancesOfDivorce - 0.3;
+}
+
+if (fatherPresent === true) {
+  chancesOfDivorce + 0.14;
+}
+
+if (raped === true) {
+  chancesOfDivorce + 0.23;
+}
+
+if (mentallyIll === true) {
+  chancesOfDivorce + 0.16;
+}
+
+if (interRacial === true) {
+  chancesOfDivorce + x;
+}
+
+function marriage(riskFactors) {
+  chancesOfDivorce / 11;
+}
