@@ -171,17 +171,21 @@ function getSelectedValue11M() {
   console.log(totalChances);
 }
 
-finalChances =
-  (chancesOfDivorce3M +
-    chancesOfDivorce4M +
-    chancesOfDivorce5M +
-    chancesOfDivorce6M +
-    chancesOfDivorce7M +
-    chancesOfDivorce8M +
-    chancesOfDivorce9M +
-    chancesOfDivorce11M) /
-  8;
-console.log(finalChances);
+// document.addEventListener(,)
+
+// finalChances =
+//   (chancesOfDivorce3M +
+//     chancesOfDivorce4M +
+//     chancesOfDivorce5M +
+//     chancesOfDivorce6M +
+//     chancesOfDivorce7M +
+//     chancesOfDivorce8M +
+//     chancesOfDivorce9M +
+//     chancesOfDivorce11M) /
+//   8;
+// let finalChances = getSelectedValue11M();
+// console.log(finalChances);
+//}
 
 // function finalDivorceRate() {
 //   // let hisTotalDivorceRate = 0;
