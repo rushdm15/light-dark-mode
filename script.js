@@ -108,7 +108,7 @@ function getSelectedValue3M() {
 // console.log(totalChances3);
 
 function getSelectedValue4M() {
-  let chancesOfDivorce4M = 0;
+  let totalChances4 = 0;
   var virginityAgeValue4M = document.getElementById("virginAge4M").value;
   if (virginityAgeValue4M >= 19) {
     totalChances4 = 0.0;
@@ -131,7 +131,7 @@ function getSelectedValue4M() {
 }
 
 function getSelectedValue5M() {
-  let chancesOfDivorce5M = 0;
+  let totalChances5 = 0;
   var religiousNessValue5M = document.getElementById("religiousNess5M").value;
   if (religiousNessValue5M === "Somewhat important") {
     totalChances5 = 0.1;
@@ -142,8 +142,8 @@ function getSelectedValue5M() {
   // console.log(totalChances5);
 }
 
-let chancesOfDivorce6M = 0;
 function getSelectedValue6M() {
+  let chancesOfDivorce6M = 0;
   var educatEdValue6M = document.getElementById("educatEd6M").value;
   if (educatEdValue6M === "dropout") {
     console.log(chancesOfDivorce6M);
