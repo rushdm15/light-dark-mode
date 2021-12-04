@@ -60,8 +60,8 @@ if (currentTheme) {
 
 //========================= Him functions
 
-function getSelectedValue1() {
-  var selectAgeValue = document.getElementById("selectAge").value;
+function changeText() {
+  document.getElementById("demo").innerHTML = "Him";
 }
 function getSelectedValue2() {
   var selectRaceValue = document.getElementById("selectRace").value;

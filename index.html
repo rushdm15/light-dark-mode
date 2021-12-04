@@ -33,9 +33,9 @@
             <h1>Custom Title Here</h1>
             <h2>Welcome to my website!</h2>
         </div>
-        <div class="custom-select" onChange="getSelectedValue1()" style="width:200px;">
+        <div class="custom-select" onChange="changeText()" style="width:200px;">
             <p>Type of relationship?</p>
-            <select>
+            <select id="marraige" >
                 <option value="0" id="" >Select relationship:</option>
                 <option value="1" id="hetero" >Heterosexual:</option>
                 <option value="2" id="homoMM" >Homosexual - Male/Male</option>
@@ -48,7 +48,7 @@
         <div class="column">
         <!-- Select Box -->
         <div class="custom-select" style="width:200px;">
-            <h1>Him</h1>
+            <h1 id="demo">unknown</h1>
             <p>Age</p>
             <select id="selectAge" onChange="getSelectedValue1()">
                 <option value="0">Select age:</option>
