@@ -60,28 +60,6 @@ if (currentTheme) {
 
 //========================= Him functions
 
-// let totalChances3 = 0;
-// let totalChances4 = 0;
-// let totalChances5 = 0;
-// let totalChances6 = 0;
-// let totalChances7 = 0;
-// let totalChances8 = 0;
-// let totalChances9 = 0;
-// // let totalChances = 0;
-// let totalChances11 = 0;
-// let finalAnswer =
-//   (totalChances3 +
-//     totalChances4 +
-//     totalChances5 +
-//     totalChances6 +
-//     totalChances7 +
-//     totalChances8 +
-//     totalChances9 +
-//     totalChances11) /
-//   8;
-
-// console.log(finalAnswer);
-
 function getSelectedValue1() {
   var selectAgeValue = document.getElementById("selectAge").value;
 }
