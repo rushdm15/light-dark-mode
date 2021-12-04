@@ -183,7 +183,7 @@ function getSelectedValue3M() {
     // console.log(totalChances11);
   }
 
-  var finalChances =
+  var finalChancesM =
     (totalChances3 +
       totalChances4 +
       totalChances5 +
@@ -193,7 +193,7 @@ function getSelectedValue3M() {
       totalChances7 +
       totalChances8) /
     8;
-  console.log(finalChances);
+  console.log(finalChancesM);
 }
 
 //========================= Her functions
@@ -207,14 +207,14 @@ function getSelectedValue2() {
 
 function getSelectedValue3M() {
   let totalChances3 = 0;
-  var previousPartners3M = document.getElementById("selectPartners3M").value;
-  if (previousPartners3M >= 16) {
+  var previousPartners3F = document.getElementById("selectPartners3M").value;
+  if (previousPartners3F >= 16) {
     totalChances3 = 0.8;
-  } else if (previousPartners3M >= 5 && previousPartners3M <= 15) {
+  } else if (previousPartners3F >= 5 && previousPartners3F <= 15) {
     totalChances3 = 0.7;
-  } else if (previousPartners3M >= 2 && previousPartners3M <= 4) {
+  } else if (previousPartners3F >= 2 && previousPartners3F <= 4) {
     totalChances3 = 0.6;
-  } else if (previousPartners3M == 1) {
+  } else if (previousPartners3F == 1) {
     totalChances3 = 0.5;
   } else {
     totalChances3 = 0.2;
@@ -223,105 +223,105 @@ function getSelectedValue3M() {
   //console.log(totalChances3);
 
   let totalChances4 = 0;
-  var virginityAgeValue4M = document.getElementById("virginAge4M").value;
-  if (virginityAgeValue4M >= 26) {
+  var virginityAgeValue4F = document.getElementById("virginAge4M").value;
+  if (virginityAgeValue4F >= 26) {
     totalChances4 = 0.32;
-  } else if (virginityAgeValue4M >= 23 && virginityAgeValue4M <= 25) {
+  } else if (virginityAgeValue4F >= 23 && virginityAgeValue4F <= 25) {
     totalChances4 = 0.38;
-  } else if (virginityAgeValue4M >= 21 && virginityAgeValue4M <= 22) {
+  } else if (virginityAgeValue4F >= 21 && virginityAgeValue4F <= 22) {
     totalChances4 = 0.33;
-  } else if (virginityAgeValue4M >= 19 && virginityAgeValue4M <= 20) {
+  } else if (virginityAgeValue4F >= 19 && virginityAgeValue4F <= 20) {
     totalChances4 = 0.37;
-  } else if (virginityAgeValue4M >= 17 && virginityAgeValue4M <= 18) {
+  } else if (virginityAgeValue4F >= 17 && virginityAgeValue4F <= 18) {
     totalChances4 = 0.53;
-  } else if (virginityAgeValue4M >= 15 && virginityAgeValue4M <= 16) {
+  } else if (virginityAgeValue4F >= 15 && virginityAgeValue4F <= 16) {
     totalChances4 = 0.6;
-  } else if (virginityAgeValue4M >= 13 && virginityAgeValue4M <= 14) {
+  } else if (virginityAgeValue4F >= 13 && virginityAgeValue4F <= 14) {
     totalChances4 = 0.73;
-  } else if (virginityAgeValue4M <= 12) {
+  } else if (virginityAgeValue4F <= 12) {
     totalChances4 = 0.82;
   }
   // console.log(totalChances4);
 
   let totalChances5 = 0;
-  var religiousNessValue5M = document.getElementById("religiousNess5M").value;
-  if (religiousNessValue5M === "Very important") {
+  var religiousNessValue5F = document.getElementById("religiousNess5M").value;
+  if (religiousNessValue5F === "Very important") {
     totalChances5 = 0.4;
   }
-  if (religiousNessValue5M === "Somewhat important") {
+  if (religiousNessValue5F === "Somewhat important") {
     totalChances5 = 0.5;
   }
-  if (religiousNessValue5M === "Not important") {
+  if (religiousNessValue5F === "Not important") {
     totalChances5 = 0.6;
   }
   // console.log(totalChances5);
 
   let totalChances6 = 0;
-  var educatEdValue6M = document.getElementById("educatEd6M").value;
-  if (educatEdValue6M === "dropout") {
+  var educatEdValue6F = document.getElementById("educatEd6M").value;
+  if (educatEdValue6F === "dropout") {
     //console.log(totalChances6);
     totalChances6 = 0.61;
   }
-  if (educatEdValue6M === "HS") {
+  if (educatEdValue6F === "HS") {
     //console.log(totalChances6);
     totalChances6 = 0.59;
   }
-  if (educatEdValue6M === "some uni") {
+  if (educatEdValue6F === "some uni") {
     //console.log(totalChances6);
     totalChances6 = 0.51;
   }
-  if (educatEdValue6M === "Graduate") {
+  if (educatEdValue6F === "Graduate") {
     //console.log(totalChances6);
     totalChances6 = 0.32;
   }
 
   let totalChances7 = 0;
-  var isFatherPresentValue7M = document.getElementById("isFatherPresent7M")
+  var isFatherPresentValue7F = document.getElementById("isFatherPresent7M")
     .value;
-  if (isFatherPresentValue7M === "oneParent") {
+  if (isFatherPresentValue7F === "oneParent") {
     totalChances7 = 0.43;
     //console.log(totalChances7);
   }
-  if (isFatherPresentValue7M === "twoParent") {
+  if (isFatherPresentValue7F === "twoParent") {
     totalChances7 = 0.29;
     //console.log(totalChances7);
   }
 
   let totalChances8 = 0;
-  var rapeVictimValue8M = document.getElementById("rapeVictim8M").value;
-  if (rapeVictimValue8M === "Yes") {
+  var rapeVictimValue8F = document.getElementById("rapeVictim8M").value;
+  if (rapeVictimValue8F === "Yes") {
     totalChances8 = 0.63;
     //console.log(totalChances8);
   }
-  if (rapeVictimValue8M === "No") {
+  if (rapeVictimValue8F === "No") {
     totalChances8 = 0.4;
     //console.log(totalChances8);
   }
 
   let totalChances9 = 0;
-  var mentallyIllValue9M = document.getElementById("mentallyIll9M").value;
-  if (mentallyIllValue9M === "1") {
+  var mentallyIllValue9F = document.getElementById("mentallyIll9M").value;
+  if (mentallyIllValue9F === "1") {
     totalChances9 = 0.56;
     //console.log(totalChances9);
   }
-  if (mentallyIllValue9M === "2") {
+  if (mentallyIllValue9F === "2") {
     totalChances9 = 0.4;
     //console.log(totalChances9);
   }
   // console.log(totalChances9);
 
   let totalChances11 = 0;
-  var outOfWedlockValue11M = document.getElementById("outOfWedlock11M").value;
-  if (outOfWedlockValue11M === "singleMom") {
+  var outOfWedlockValue11F = document.getElementById("outOfWedlock11M").value;
+  if (outOfWedlockValue11F === "singleMom") {
     totalChances11 = 0.68;
     // console.log(totalChances11);
   }
-  if (outOfWedlockValue11M === "basedMom") {
+  if (outOfWedlockValue11F === "basedMom") {
     totalChances11 = 0.4;
     // console.log(totalChances11);
   }
 
-  var finalChances =
+  var finalChancesF =
     (totalChances3 +
       totalChances4 +
       totalChances5 +
@@ -331,5 +331,5 @@ function getSelectedValue3M() {
       totalChances7 +
       totalChances8) /
     8;
-  console.log(finalChances);
+  console.log(finalChancesF);
 }
