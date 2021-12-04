@@ -205,7 +205,7 @@ function getSelectedValue2() {
   var selectRaceValue = document.getElementById("selectRace").value;
 }
 
-function getSelectedValue3M() {
+function getSelectedValue3F() {
   let totalChances3 = 0;
   var previousPartners3F = document.getElementById("selectPartners3M").value;
   if (previousPartners3F >= 16) {
