@@ -198,28 +198,6 @@ function getSelectedValue3M() {
 
 //========================= Her functions
 
-// let totalChances3 = 0;
-// let totalChances4 = 0;
-// let totalChances5 = 0;
-// let totalChances6 = 0;
-// let totalChances7 = 0;
-// let totalChances8 = 0;
-// let totalChances9 = 0;
-// // let totalChances = 0;
-// let totalChances11 = 0;
-// let finalAnswer =
-//   (totalChances3 +
-//     totalChances4 +
-//     totalChances5 +
-//     totalChances6 +
-//     totalChances7 +
-//     totalChances8 +
-//     totalChances9 +
-//     totalChances11) /
-//   8;
-
-// console.log(finalAnswer);
-
 function getSelectedValue1() {
   var selectAgeValue = document.getElementById("selectAge").value;
 }
@@ -282,19 +260,19 @@ function getSelectedValue3M() {
   var educatEdValue6M = document.getElementById("educatEd6M").value;
   if (educatEdValue6M === "dropout") {
     //console.log(totalChances6);
-    totalChances6 = 0.45;
+    totalChances6 = 0.61;
   }
   if (educatEdValue6M === "HS") {
     //console.log(totalChances6);
-    totalChances6 = 0.53;
+    totalChances6 = 0.59;
   }
   if (educatEdValue6M === "some uni") {
     //console.log(totalChances6);
-    totalChances6 = 0.46;
+    totalChances6 = 0.51;
   }
   if (educatEdValue6M === "Graduate") {
     //console.log(totalChances6);
-    totalChances6 = 0.35;
+    totalChances6 = 0.32;
   }
 
   let totalChances7 = 0;
