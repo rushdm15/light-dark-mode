@@ -94,20 +94,18 @@ function getSelectedValue3M() {
   var previousPartners3M = document.getElementById("selectPartners3M").value;
   if (previousPartners3M >= 16) {
     totalChances3 = 0.6;
-  } else if (previousPartners3M > 5 && previousPartners3M <= 15) {
+  } else if (previousPartners3M >= 5 && previousPartners3M <= 15) {
     totalChances3 = 0.5;
-  } else if (previousPartners3M > 2 && previousPartners3M <= 4) {
+  } else if (previousPartners3M >= 2 && previousPartners3M <= 4) {
     totalChances3 = 0.4;
   } else if (previousPartners3M == 1) {
     totalChances3 = 0.3;
   } else {
     totalChances3 = 0;
   }
-  return totalChances3;
-}
-// console.log(totalChances3);
 
-function getSelectedValue4M() {
+  console.log(totalChances3);
+
   let totalChances4 = 0;
   var virginityAgeValue4M = document.getElementById("virginAge4M").value;
   if (virginityAgeValue4M >= 19) {
@@ -128,9 +126,7 @@ function getSelectedValue4M() {
     totalChances4 = 0.5;
   }
   // console.log(totalChances4);
-}
 
-function getSelectedValue5M() {
   let totalChances5 = 0;
   var religiousNessValue5M = document.getElementById("religiousNess5M").value;
   if (religiousNessValue5M === "Somewhat important") {
@@ -140,92 +136,70 @@ function getSelectedValue5M() {
     totalChances5 = 0.2;
   }
   // console.log(totalChances5);
-}
 
-function getSelectedValue6M() {
   let chancesOfDivorce6M = 0;
   var educatEdValue6M = document.getElementById("educatEd6M").value;
   if (educatEdValue6M === "dropout") {
     console.log(chancesOfDivorce6M);
-    return (chancesOfDivorce6M = 0);
+    chancesOfDivorce6M = 0;
   }
   if (educatEdValue6M === "HS") {
     console.log(chancesOfDivorce6M);
-    return (chancesOfDivorce6M = 0.3);
+    chancesOfDivorce6M = 0.3;
   }
   if (educatEdValue6M === "some uni") {
     console.log(chancesOfDivorce6M);
-    return (chancesOfDivorce6M = 0.3);
+    chancesOfDivorce6M = 0.3;
   }
   if (educatEdValue6M === "Graduate") {
     console.log(chancesOfDivorce6M);
-    return (chancesOfDivorce6M = 0);
+    chancesOfDivorce6M = 0;
   }
-}
 
-let chancesOfDivorce7M = 0;
-function getSelectedValue7M() {
+  let chancesOfDivorce7M = 0;
   var isFatherPresentValue7M = document.getElementById("isFatherPresent7M")
     .value;
   if (isFatherPresentValue7M === "oneParent") {
-    chancesOfDivorce7M += 0.14;
+    chancesOfDivorce7M = 0.14;
     console.log(chancesOfDivorce7M);
-    return chancesOfDivorce7M;
   }
   if (isFatherPresentValue7M === "twoParent") {
     chancesOfDivorce7M = 0;
     console.log(chancesOfDivorce7M);
-    return chancesOfDivorce7M;
   }
-}
 
-let chancesOfDivorce8M = 0;
-function getSelectedValue8M() {
+  let chancesOfDivorce8M = 0;
   var rapeVictimValue8M = document.getElementById("rapeVictim8M").value;
   if (rapeVictimValue8M === "Yes") {
-    chancesOfDivorce8M += 0.23;
+    chancesOfDivorce8M = 0.23;
     console.log(chancesOfDivorce8M);
-    return chancesOfDivorce8M;
   }
   if (rapeVictimValue8M === "No") {
     chancesOfDivorce8M = 0;
     console.log(chancesOfDivorce8M);
-    return chancesOfDivorce8M;
   }
-}
 
-let totalChances9 = 0;
-function getSelectedValue9M() {
+  let totalChances9 = 0;
   var mentallyIllValue9M = document.getElementById("mentallyIll9M").value;
   if (mentallyIllValue9M === "1") {
-    totalChances9 += 0.16;
+    totalChances9 = 0.16;
     console.log(totalChances9);
-    return totalChances9;
   }
   if (mentallyIllValue9M === "2") {
     totalChances9 = 0;
     console.log(totalChances9);
-    return totalChances9;
   }
-}
-// console.log(totalChances9);
+  // console.log(totalChances9);
 
-// var marriageRaceValue = document.getElementById("marriageRace").value;
-// console.log(getSelectedValue10());
-
-// function ultimateChances() {
-let totalChances11 = 0;
-function getSelectedValue11M() {
+  let totalChances11 = 0;
   var outOfWedlockValue11M = document.getElementById("outOfWedlock11M").value;
   if (outOfWedlockValue11M === "singleMom") {
-    totalChances11 += 0.28;
+    totalChances11 = 0.28;
     // console.log(totalChances11);
-    return totalChances11;
   }
   if (outOfWedlockValue11M === "basedMom") {
     totalChances11 = 0;
     // console.log(totalChances11);
-    return totalChances11;
   }
 
   var finalChances =
