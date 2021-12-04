@@ -71,15 +71,15 @@ function getSelectedValue3M() {
   let totalChances3 = 0;
   var previousPartners3M = document.getElementById("selectPartners3M").value;
   if (previousPartners3M >= 16) {
-    totalChances3 = 0.8;
+    totalChances3 = 0;
   } else if (previousPartners3M >= 5 && previousPartners3M <= 15) {
-    totalChances3 = 0.7;
+    totalChances3 = 0;
   } else if (previousPartners3M >= 2 && previousPartners3M <= 4) {
-    totalChances3 = 0.6;
+    totalChances3 = 0;
   } else if (previousPartners3M == 1) {
-    totalChances3 = 0.5;
+    totalChances3 = 0;
   } else {
-    totalChances3 = 0.2;
+    totalChances3 = 0;
   }
 
   //console.log(totalChances3);
