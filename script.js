@@ -207,7 +207,7 @@ function getSelectedValue2() {
 
 function getSelectedValue3F() {
   let totalChances3 = 0;
-  var previousPartners3F = document.getElementById("selectPartners3M").value;
+  var previousPartners3F = document.getElementById("selectPartners3F").value;
   if (previousPartners3F >= 16) {
     totalChances3 = 0.8;
   } else if (previousPartners3F >= 5 && previousPartners3F <= 15) {
@@ -223,7 +223,7 @@ function getSelectedValue3F() {
   //console.log(totalChances3);
 
   let totalChances4 = 0;
-  var virginityAgeValue4F = document.getElementById("virginAge4M").value;
+  var virginityAgeValue4F = document.getElementById("virginAge4F").value;
   if (virginityAgeValue4F >= 26) {
     totalChances4 = 0.32;
   } else if (virginityAgeValue4F >= 23 && virginityAgeValue4F <= 25) {
@@ -244,7 +244,7 @@ function getSelectedValue3F() {
   // console.log(totalChances4);
 
   let totalChances5 = 0;
-  var religiousNessValue5F = document.getElementById("religiousNess5M").value;
+  var religiousNessValue5F = document.getElementById("religiousNess5F").value;
   if (religiousNessValue5F === "Very important") {
     totalChances5 = 0.4;
   }
@@ -257,7 +257,7 @@ function getSelectedValue3F() {
   // console.log(totalChances5);
 
   let totalChances6 = 0;
-  var educatEdValue6F = document.getElementById("educatEd6M").value;
+  var educatEdValue6F = document.getElementById("educatEd6F").value;
   if (educatEdValue6F === "dropout") {
     //console.log(totalChances6);
     totalChances6 = 0.61;
@@ -276,7 +276,7 @@ function getSelectedValue3F() {
   }
 
   let totalChances7 = 0;
-  var isFatherPresentValue7F = document.getElementById("isFatherPresent7M")
+  var isFatherPresentValue7F = document.getElementById("isFatherPresent7F")
     .value;
   if (isFatherPresentValue7F === "oneParent") {
     totalChances7 = 0.43;
@@ -288,7 +288,7 @@ function getSelectedValue3F() {
   }
 
   let totalChances8 = 0;
-  var rapeVictimValue8F = document.getElementById("rapeVictim8M").value;
+  var rapeVictimValue8F = document.getElementById("rapeVictim8F").value;
   if (rapeVictimValue8F === "Yes") {
     totalChances8 = 0.63;
     //console.log(totalChances8);
@@ -299,7 +299,7 @@ function getSelectedValue3F() {
   }
 
   let totalChances9 = 0;
-  var mentallyIllValue9F = document.getElementById("mentallyIll9M").value;
+  var mentallyIllValue9F = document.getElementById("mentallyIll9F").value;
   if (mentallyIllValue9F === "1") {
     totalChances9 = 0.56;
     //console.log(totalChances9);
@@ -311,7 +311,7 @@ function getSelectedValue3F() {
   // console.log(totalChances9);
 
   let totalChances11 = 0;
-  var outOfWedlockValue11F = document.getElementById("outOfWedlock11M").value;
+  var outOfWedlockValue11F = document.getElementById("outOfWedlock11F").value;
   if (outOfWedlockValue11F === "singleMom") {
     totalChances11 = 0.68;
     // console.log(totalChances11);
