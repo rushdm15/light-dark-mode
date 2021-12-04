@@ -227,87 +227,18 @@ function getSelectedValue11M() {
     // console.log(totalChances11);
     return totalChances11;
   }
+
+  var finalChances =
+    // totalChances3 +
+    totalChances4 +
+    totalChances5 +
+    totalChances9 +
+    totalChances11 +
+    chancesOfDivorce6M +
+    chancesOfDivorce7M +
+    chancesOfDivorce8M;
+  console.log(finalChances);
 }
-
-let newVariable = getSelectedValue11M();
-console.log(newVariable);
-
-// else {
-//   console.log(totalChances11);
-//   return (totalChances11 = 0);
-// }
-
-// let chancesOfDivorce11M = 0;
-// function getSelectedValue11M() {
-//   var outOfWedlockValue11M = document.getElementById("outOfWedlock11M").value;
-//   if (outOfWedlockValue11M === "singleMom") {
-//     chancesOfDivorce11M += 0.28;
-//   }
-//   // return chancesOfDivorce11M;
-//   console.log(chancesOfDivorce11M);
-// }
-
-// document.addEventListener(,)
-
-// finalChances =
-//   (chancesOfDivorce3M +
-//     chancesOfDivorce4M +
-//     chancesOfDivorce5M +
-//     chancesOfDivorce6M +
-//     chancesOfDivorce7M +
-//     chancesOfDivorce8M +
-//     chancesOfDivorce9M +
-//     chancesOfDivorce11M) /
-//   8;
-// let finalChances = getSelectedValue11M();
-// console.log(finalChances);
-//}
-
-// function finalDivorceRate() {
-//   // let hisTotalDivorceRate = 0;
-//   let hisTotalDivorceRate = getSelectedValue1M + getSelectedValue2M;
-// }
-// console.log(getSelectedValue11M());
-
-// var chancesOfDivorce = 0;
-// riskFactors =
-//   ageGap +
-//   race +
-//   previousPartners +
-//   virginityAge +
-//   religiousNess +
-//   educatEd +
-//   fatherPresent +
-//   raped +
-//   mentallyIll +
-//   interRacial;
-
-// function ageGap(yourAge, theirAge) {
-//   return yourAge - theirAge;
-// }
-
-// if (ageGap > 5) {
-//   chancesOfDivorce + x;
-// } else if (ageGap <= 5) {
-//   chancesOfDivorce + 0;
-// }
-
-// // if (race === whiteWoman && whiteWomanAge >= 20 && whiteWomanAge < 30) {
-// //   chancesOfDivorce - 0.15;
-// // }
-
-// if (interRacial === true) {
-//   chancesOfDivorce + x;
-// }
-
-// chancesOfDivorceNow =
-//   0.15 + 0.12 + 0.14 + 0.16 + 0.14 + 0.15 + 0.0 + 0.5 + 0.2 + 0.7;
-
-// function marriage(riskFactors) {
-//   chancesOfDivorceNow / 11;
-// }
-
-// console.log(marriage);
 
 //========================= Her functions
 
