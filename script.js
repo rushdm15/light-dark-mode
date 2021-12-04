@@ -104,7 +104,7 @@ function getSelectedValue3M() {
     totalChances3 = 0;
   }
 
-  console.log(totalChances3);
+  //console.log(totalChances3);
 
   let totalChances4 = 0;
   var virginityAgeValue4M = document.getElementById("virginAge4M").value;
@@ -140,19 +140,19 @@ function getSelectedValue3M() {
   let chancesOfDivorce6M = 0;
   var educatEdValue6M = document.getElementById("educatEd6M").value;
   if (educatEdValue6M === "dropout") {
-    console.log(chancesOfDivorce6M);
+    //console.log(chancesOfDivorce6M);
     chancesOfDivorce6M = 0;
   }
   if (educatEdValue6M === "HS") {
-    console.log(chancesOfDivorce6M);
+    //console.log(chancesOfDivorce6M);
     chancesOfDivorce6M = 0.3;
   }
   if (educatEdValue6M === "some uni") {
-    console.log(chancesOfDivorce6M);
+    //console.log(chancesOfDivorce6M);
     chancesOfDivorce6M = 0.3;
   }
   if (educatEdValue6M === "Graduate") {
-    console.log(chancesOfDivorce6M);
+    //console.log(chancesOfDivorce6M);
     chancesOfDivorce6M = 0;
   }
 
@@ -161,33 +161,33 @@ function getSelectedValue3M() {
     .value;
   if (isFatherPresentValue7M === "oneParent") {
     chancesOfDivorce7M = 0.14;
-    console.log(chancesOfDivorce7M);
+    //console.log(chancesOfDivorce7M);
   }
   if (isFatherPresentValue7M === "twoParent") {
     chancesOfDivorce7M = 0;
-    console.log(chancesOfDivorce7M);
+    //console.log(chancesOfDivorce7M);
   }
 
   let chancesOfDivorce8M = 0;
   var rapeVictimValue8M = document.getElementById("rapeVictim8M").value;
   if (rapeVictimValue8M === "Yes") {
     chancesOfDivorce8M = 0.23;
-    console.log(chancesOfDivorce8M);
+    //console.log(chancesOfDivorce8M);
   }
   if (rapeVictimValue8M === "No") {
     chancesOfDivorce8M = 0;
-    console.log(chancesOfDivorce8M);
+    //console.log(chancesOfDivorce8M);
   }
 
   let totalChances9 = 0;
   var mentallyIllValue9M = document.getElementById("mentallyIll9M").value;
   if (mentallyIllValue9M === "1") {
     totalChances9 = 0.16;
-    console.log(totalChances9);
+    //console.log(totalChances9);
   }
   if (mentallyIllValue9M === "2") {
     totalChances9 = 0;
-    console.log(totalChances9);
+    //console.log(totalChances9);
   }
   // console.log(totalChances9);
 
@@ -203,7 +203,7 @@ function getSelectedValue3M() {
   }
 
   var finalChances =
-    // totalChances3 +
+    totalChances3 +
     totalChances4 +
     totalChances5 +
     totalChances9 +
