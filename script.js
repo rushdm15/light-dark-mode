@@ -60,11 +60,35 @@ if (currentTheme) {
 
 //========================= Him functions
 
-function changeText() {
-  document.getElementById("demo").innerHTML = "Him";
-}
-function getSelectedValue2() {
-  var selectRaceValue = document.getElementById("selectRace").value;
+// function changeText() {
+//   document.getElementById("demo").innerHTML = "Him";
+// }
+function getSelectedValue00() {
+  // var userType1 = "";
+  var userType2 = "";
+  // var selectTypeValue = document.getElementById("marriage").value;
+  // if (selectTypeValue === "hetero") {
+  //   userType1 = "You";
+  // }
+  // if (selectTypeValue === "homoMM") {
+  //   userType1 = "You";
+  // }
+  // if (selectTypeValue === "homoFF") {
+  //   userType1 = "You";
+  // }
+  // document.getElementById("demo").innerHTML = userType1;
+
+  var selectTypeValue = document.getElementById("marriage").value;
+  if (selectTypeValue === "hetero") {
+    userType2 = "Her";
+  }
+  if (selectTypeValue === "homoMM") {
+    userType2 = "Him";
+  }
+  if (selectTypeValue === "homoFF") {
+    userType2 = "Her";
+  }
+  document.getElementById("demo2").innerHTML = userType2;
 }
 
 function getSelectedValue3M() {

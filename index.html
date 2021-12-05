@@ -33,24 +33,23 @@
             <h1>Custom Title Here</h1>
             <h2>Welcome to my website!</h2>
         </div>
-        <div class="custom-select" onChange="changeText()" style="width:200px;">
+        <div class="custom-select" style="width:200px;">
             <p>Type of relationship?</p>
-            <select id="marraige" >
+            <select id="marriage" onchange="getSelectedValue00()">
                 <option value="0" id="" >Select relationship:</option>
-                <option value="1" id="hetero" >Heterosexual:</option>
-                <option value="2" id="homoMM" >Homosexual - Male/Male</option>
-                <option value="3" id="homoFF" >Homosexual - Female/Female</option>
+                <option value="hetero">Heterosexual:</option>
+                <option value="homoMM">Homosexual - Male/Male</option>
+                <option value="homoFF">Homosexual - Female/Female</option>
             </select>
         </div>
     </section>
-
     <div class="row">
         <div class="column">
         <!-- Select Box -->
         <div class="custom-select" style="width:200px;">
-            <h1 id="demo">unknown</h1>
+            <h1 id="demo">You</h1>
             <p>Age</p>
-            <select id="selectAge" onChange="getSelectedValue1()">
+            <select id="selectAge" onchange="getSelectedValue1()">
                 <option value="0">Select age:</option>
                 <option value="10s">teens</option>
                 <option value="20s">twenties</option>
@@ -176,7 +175,7 @@
         <div class="column">
             <!-- Select Box -->
             <div class="custom-select" style="width:200px;">
-                <h1>Her</h1>
+                <h1 id="demo2">Them</h1>
                 <p>Age</p>
                 <select id="selectAge" onChange="getSelectedValue1()">
                     <option value="0">Select age:</option>
